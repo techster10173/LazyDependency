@@ -1,5 +1,5 @@
 compile_backend:
-	cd backend && go build
+	cd backend && go build -o out/lazydependency
 
 run_frontend:
 	cd frontend && npm run dev
