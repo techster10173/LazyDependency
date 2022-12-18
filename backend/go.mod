@@ -5,8 +5,14 @@ go 1.19
 require (
 	github.com/gin-contrib/cors v1.4.0
 	github.com/gin-gonic/gin v1.8.1
+	github.com/microcosm-cc/bluemonday v1.0.21
 	github.com/neo4j/neo4j-go-driver/v5 v5.3.0
 	go.mongodb.org/mongo-driver v1.11.1
+)
+
+require (
+	github.com/aymerick/douceur v0.2.0 // indirect
+	github.com/gorilla/css v1.0.0 // indirect
 )
 
 require (

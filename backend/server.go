@@ -8,6 +8,7 @@ import (
 	"os/signal"
 	"syscall"
 
+	"lazydependency/controllers"
 	mongoClient "lazydependency/mongo_client"
 	neo4jClient "lazydependency/neo4j_client"
 	router "lazydependency/router"
@@ -26,6 +27,7 @@ func main() {
 
 	mongoClient.InitMongoDB()
 	neo4jClient.InitNeo4j()
+	controllers.Init()
 
 	port, exists := os.LookupEnv("PORT")
 	if !exists || port == "" {
