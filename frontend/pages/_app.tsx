@@ -1,8 +1,8 @@
 import * as React from "react";
 import { AppProps } from "next/app";
-import { ThemeProvider } from "@material-ui/core";
+import { ThemeProvider } from "@mui/material";
 import { CacheProvider } from "@emotion/react";
-import CssBaseline from "@material-ui/core/CssBaseline";
+import CssBaseline from '@mui/material/CssBaseline';
 import createCache from "@emotion/cache";
 import theme from "../theme";
 import Layout from "../components/layout/Layout";

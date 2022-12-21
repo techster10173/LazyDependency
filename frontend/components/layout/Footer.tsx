@@ -1,4 +1,4 @@
-import { Typography, Box } from "@material-ui/core";
+import { Typography, Box } from "@mui/material";
 
 export default function Footer(): JSX.Element {
   return (
