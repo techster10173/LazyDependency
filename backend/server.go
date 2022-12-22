@@ -3,16 +3,19 @@ package main
 import (
 	"flag"
 	"log"
+	"math/rand"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
+	"time"
 
 	"lazydependency/controllers"
 	mongoClient "lazydependency/mongo_client"
 	neo4jClient "lazydependency/neo4j_client"
 	router "lazydependency/router"
 
+	"github.com/gin-gonic/gin"
 	"github.com/joho/godotenv"
 )
 
@@ -23,11 +26,16 @@ func main() {
 		if err := godotenv.Load(); err != nil {
 			log.Println("No .env file found")
 		}
+		gin.SetMode(gin.DebugMode)
+	} else {
+		gin.SetMode(gin.ReleaseMode)
 	}
 
 	mongoClient.InitMongoDB()
 	neo4jClient.InitNeo4j()
 	controllers.Init()
+
+	rand.Seed(time.Now().UnixNano())
 
 	port, exists := os.LookupEnv("PORT")
 	if !exists || port == "" {
