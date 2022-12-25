@@ -51,6 +51,7 @@ func AddComment(c *gin.Context) {
 }
 
 func UploadConnections(c *gin.Context) {
+	//fmt.Printf("Starting server at port 8080")
 	file, err := c.FormFile("file")
 	if err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{
@@ -95,6 +96,9 @@ func UploadConnections(c *gin.Context) {
 
 	for k, v := range result["dependencies"].(map[string]interface{}) {
 		id := randSeq(10)
+		newVrsn := newVersion(k, v.(string))
+		log.Printf(newVrsn)
+		log.Printf(k)
 		query += "MERGE (:Dependency {name: '" + k + "'})-[:HAS]->(" + id + ":Version {name: '" + v.(string) + "'}) "
 		query += "MERGE (" + id + ")-[:IN_STACK]->(s) "
 	}

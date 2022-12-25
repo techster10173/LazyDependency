@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"lazydependency/controllers"
-	mongoClient "lazydependency/mongo_client"
 	neo4jClient "lazydependency/neo4j_client"
 	router "lazydependency/router"
 
@@ -31,7 +30,6 @@ func main() {
 		gin.SetMode(gin.ReleaseMode)
 	}
 
-	mongoClient.InitMongoDB()
 	neo4jClient.InitNeo4j()
 	controllers.Init()
 
@@ -58,7 +56,6 @@ func main() {
 	go func() {
 		<-quit
 		log.Println("Receive Interrupt Signal")
-		mongoClient.CloseDriver()
 		neo4jClient.CloseDriver()
 
 		os.Exit(0)
