@@ -5,7 +5,7 @@ import {
     Box,
     Divider,
     Button,
-  } from "@material-ui/core";
+  } from "@mui/material";
   import { useRouter } from "next/router";
   import Link from "next/link";
   import { useUser } from '@auth0/nextjs-auth0/client';

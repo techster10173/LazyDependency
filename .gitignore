@@ -3,3 +3,4 @@ frontend/.next
 .DS_Store
 backend/out/lazydependency
 backend/.env
+backend/uploads
