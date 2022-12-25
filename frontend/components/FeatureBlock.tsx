@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Grid, Typography } from "@material-ui/core";
+import { Avatar, Container, Grid, Typography } from "@material-ui/core";
 
 interface Props {
   title: string;
@@ -13,7 +13,9 @@ export default function FeatureBlock({
   icon,
 }: Props): JSX.Element {
   return (
-    <Grid item xs={12} sm={6} md={4} >
+   
+    <Grid item xs={12} sm={6} md={4}  >
+   
       {icon !== undefined ? (
         <Avatar variant="rounded" >
           {React.cloneElement(icon, { color: "primary" })}
@@ -23,6 +25,8 @@ export default function FeatureBlock({
         {title}
       </Typography>
       <Typography variant="body2">{content}</Typography>
+      
     </Grid>
+    
   );
 }

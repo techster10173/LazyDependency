@@ -7,7 +7,7 @@ interface Props {
 
 export default function FeatureContainer({ children }: Props): JSX.Element {
   return (
-    <Container maxWidth="md" >
+    <Container   >
       {children ?? ''}</Container>
   );
 }

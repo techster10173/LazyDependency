@@ -23,13 +23,13 @@ import {
       <Box
        
       >
-        <Container maxWidth="md" >
+        <Container >
           <Grid container alignItems="center">
             <Grid item xs={2}>
             <Link href="/" passHref>
-              <Typography variant="body1" align="center" >
-                Lazy Dependency
-              </Typography>
+            <Container>
+              <img src="/logoFull.png" width={150} height={60}  />
+            </Container>
               </Link>
             </Grid>
             <Grid container item xs={10} justifyContent="flex-end">
@@ -37,6 +37,7 @@ import {
               
                 <Button
                   href="/api/auth/login"
+                  variant="contained"
                   >
                   Log in
                 </Button>
@@ -45,7 +46,8 @@ import {
              {user && (
              
                   <Button
-                    href="/api/auth/logout">
+                    href="/api/auth/logout"
+                    variant="contained">
                     Log out
                   </Button>
                

@@ -20,6 +20,7 @@ const theme = createTheme({
       fontSize: "2.7rem",
       fontWeight: 700,
       color: "#000000",
+      marginTop: "2%",
     },
     h2: {
       fontSize: "2.7rem",
@@ -43,7 +44,8 @@ const theme = createTheme({
     body1: {
       fontSize: "1.15rem",
       marginTop: "0%",
-      alignSelf: "left"
+      alignItems: "left",
+      marginBottom: "2%"
     },
     body2: {
       fontSize: "1.0rem",
@@ -68,6 +70,7 @@ const theme = createTheme({
       lineHeight: 1.5,
       color: "#BBBBC1",
     },
+    
   },
   
   

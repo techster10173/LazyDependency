@@ -19,10 +19,10 @@ export default function HomePage(): JSX.Element {
         subtitle="Forget Dependency Management Problems."
         image="/assets/city.svg"
       >
-        <Link href="/api/auth/login" passHref> 
-        <Button variant="contained"   >Get started
+         
+        <Button href="/api/auth/login" variant="contained"   >Get started
         </Button>
-        </Link>
+        
         {/* <Link href="/ios" passHref> */}
         <Button disableElevation >
           
@@ -59,6 +59,7 @@ export default function HomePage(): JSX.Element {
               </>
             }
           />
+          
         </FeatureBlocksContainer>
       </FeatureContainer>
       
