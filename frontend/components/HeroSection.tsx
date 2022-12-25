@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography, Box, Grid, Container } from "@material-ui/core";
-import Image from "next/image";
+import Image from 'next/image'
 
 type Props = {
   title: string;
@@ -16,9 +16,9 @@ export default function HeroSection({
   children,
 }: Props): JSX.Element {
   return (
-    <Box sx={{ backgroundColor: "#EDE7F6" }}>
+    <Box >
       <Container maxWidth="md">
-        <Grid container alignItems="center" sx={{ py: 12 }}>
+        <Grid container alignItems="center" >
           <Grid item xs={12} sm={6}>
             <Typography variant="h1">{title}</Typography>
             <Typography variant="body1">{subtitle}</Typography>
@@ -26,7 +26,11 @@ export default function HeroSection({
           </Grid>
           <Grid item xs={12} sm={6}>
             <Container>
-              <Image src={image} width={400} height={400} />
+              <img 
+              src={image} 
+              width={400} 
+              height={400} 
+              />
             </Container>
           </Grid>
         </Grid>

@@ -13,13 +13,13 @@ export default function FeatureBlock({
   icon,
 }: Props): JSX.Element {
   return (
-    <Grid item xs={12} sm={6} md={4} sx={{ mb: 4 }}>
+    <Grid item xs={12} sm={6} md={4} >
       {icon !== undefined ? (
-        <Avatar variant="rounded" sx={{ backgroundColor: "#e0e0e0", mb: 2 }}>
+        <Avatar variant="rounded" >
           {React.cloneElement(icon, { color: "primary" })}
         </Avatar>
       ) : null}
-      <Typography variant="h3" sx={{ mb: 1 }}>
+      <Typography variant="h3" >
         {title}
       </Typography>
       <Typography variant="body2">{content}</Typography>

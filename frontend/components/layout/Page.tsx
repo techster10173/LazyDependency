@@ -17,7 +17,7 @@ export default function Page({
   return (
     <PageWrapper title={seoTitle ?? title} maxWidth={maxWidth}>
       {title ? (
-        <Typography variant="h1" sx={{ mb: 2 }}>
+        <Typography variant="h1" >
           {title}
         </Typography>
       ) : null}
@@ -47,7 +47,7 @@ function PageWrapper({ children, title, maxWidth = "md" }: Props): JSX.Element {
     );
   } else {
     return (
-      <Container maxWidth={maxWidth} sx={{ pt: 2 }}>
+      <Container maxWidth={maxWidth} >
         <Head>
           <title>{titleString}</title>
           <meta name="viewport" content="initial-scale=1, width=device-width" />

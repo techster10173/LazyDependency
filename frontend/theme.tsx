@@ -22,8 +22,8 @@ const theme = createTheme({
       color: "#000000",
     },
     h2: {
-      fontSize: "2.0rem",
-      fontWeight: 600,
+      fontSize: "2.7rem",
+      fontWeight: 700,
       color: "#000000",
     },
     h3: {
@@ -31,6 +31,8 @@ const theme = createTheme({
       fontWeight: 700,
       lineHeight: 1.25,
       color: "#000000",
+      marginTop: "3%",
+      marginBottom: "3%"
     },
     h4: {
       fontSize: "1.3rem",
@@ -40,9 +42,13 @@ const theme = createTheme({
     },
     body1: {
       fontSize: "1.15rem",
+      marginTop: "0%",
+      alignSelf: "left"
     },
     body2: {
-      fontSize: "1rem",
+      fontSize: "1.0rem",
+      marginTop: "1%",
+      marginBottom: "2%",
     },
     caption: {
       fontSize: "0.9rem",
@@ -64,40 +70,8 @@ const theme = createTheme({
     },
   },
   
-  components: {
-    MuiButton: {
-      styleOverrides: {
-        root: {
-          borderRadius: "12px",
-          textTransform: "none",
-          fontSize: "1.15rem",
-          lineHeight: 1.5,
-        },
-      },
-    },
-    MuiDialog: {
-      styleOverrides: {
-        paper: {
-          borderRadius: "12px",
-        },
-      },
-    },
-    MuiCard: {
-      styleOverrides: {
-        root: {
-          borderRadius: "12px",
-        },
-      },
-    },
-    MuiPaper: {
-      styleOverrides: {
-        rounded: {
-          borderRadius: "12px",
-          overflow: "hidden",
-        },
-      },
-    },
-  },
+  
+
 });
 
 export default theme;

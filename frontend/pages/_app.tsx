@@ -6,6 +6,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import createCache from "@emotion/cache";
 import theme from "../theme";
 import Layout from "../components/layout/Layout";
+import { UserProvider } from '@auth0/nextjs-auth0/client';
 
 export const cache = createCache({ key: "css", prepend: true });
 
@@ -21,6 +22,7 @@ export default function MyApp(props: AppProps): JSX.Element {
   }, []);
 
   return (
+    <UserProvider>
     <CacheProvider value={cache}>
       <ThemeProvider theme={theme}>
         <CssBaseline />
@@ -29,5 +31,6 @@ export default function MyApp(props: AppProps): JSX.Element {
         </Layout>
       </ThemeProvider>
     </CacheProvider>
+  </UserProvider>
   );
 }

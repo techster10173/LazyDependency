@@ -8,12 +8,6 @@ import React from "react";
 import FeatureContainer from "../components/FeatureContainer";
 import FeatureBlocksContainer from "../components/FeatureBlocksContainer";
 import FeatureBlock from "../components/FeatureBlock";
-import BigSection from "../components/BigSection";
-import CompaniesSection from "../components/CompaniesSection";
-import { companies } from "../data/companies";
-import Image from "next/image";
-import TestimonialSection from "../components/TestimonialSection";
-import { testimonials } from "../data/testimonials";
 import ContactSection from "../components/ContactSection";
 import Link from "next/link";
 
@@ -25,7 +19,7 @@ export default function HomePage(): JSX.Element {
         subtitle="Forget Dependency Management Problems."
         image="/assets/city.svg"
       >
-        <Link href="/page3" passHref> 
+        <Link href="/api/auth/login" passHref> 
         <Button variant="contained"   >Get started
         </Button>
         </Link>
@@ -36,7 +30,7 @@ export default function HomePage(): JSX.Element {
         {/* </Link> */}
       </HeroSection>
       
-      <FeatureContainer>
+      <FeatureContainer >
         <FeatureBlocksContainer>
           <FeatureBlock
             title="Innovative"
@@ -69,14 +63,9 @@ export default function HomePage(): JSX.Element {
       </FeatureContainer>
       
       
-      <Box sx={{ mb: 4 }}>
-        
-      </Box>
-      <Box sx={{ mb: 8 }}>
-        
-      </Box>
-      <Box sx={{ mb: 4 }}>
-        <ContactSection />
+      
+      <Box >
+        <ContactSection  />
       </Box>
     </Page>
   );
