@@ -15,19 +15,13 @@ import (
 	"github.com/neo4j/neo4j-go-driver/v5/neo4j"
 )
 
-// This gets a list of the versions that exist in the graph for this dependency
-func GetDependencyNode(c *gin.Context) {
-	// TODO Implement
+func GetDependency(c *gin.Context) {
 }
 
-// this gets a list of what other dependencies we have compability data on for this version (just what edges exist)
-func GetVersionNode(c *gin.Context) {
-	// TODO Implement
+func LikeDependency(c *gin.Context) {
 }
 
-// this adds a new dependency node (if it doesnt already exist)
-func AddDependencyNode(c *gin.Context) {
-	// TODO Implement
+func UnlikeDependency(c *gin.Context) {
 }
 
 // This adds a new version node to a given dependency node (if it doesnt already exist)
