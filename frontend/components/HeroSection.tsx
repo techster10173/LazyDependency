@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Container } from "@material-ui/core";
+import { Typography, Box, Grid, Container } from "@mui/material";
 import Image from 'next/image'
 
 type Props = {

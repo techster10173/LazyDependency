@@ -1,24 +1,17 @@
 import {
-    Typography,
     Container,
     Grid,
     Box,
     Divider,
     Button,
   } from "@mui/material";
-  import { useRouter } from "next/router";
   import Link from "next/link";
   import { useUser } from '@auth0/nextjs-auth0/client';
-  import React, { useState } from 'react';
-  
+  import React from 'react';
   
   export default function Header(): JSX.Element {
-    const router = useRouter();
-    const [isOpen, setIsOpen] = useState(false);
     const { user, isLoading } = useUser();
-    const toggle = () => setIsOpen(!isOpen);
 
-  
     return (
       <Box
        

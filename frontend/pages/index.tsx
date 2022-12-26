@@ -1,7 +1,7 @@
-import { Button, Container, Box } from "@material-ui/core";
-import CodeIcon from "@material-ui/icons/Code";
-import StarIcon from "@material-ui/icons/Star";
-import PeopleIcon from "@material-ui/icons/People";
+import { Button, Container, Box } from "@mui/material";
+import CodeIcon from "@mui/icons-material/Code";
+import StarIcon from "@mui/icons-material/Star";
+import PeopleIcon from "@mui/icons-material/People";
 import Page from "../components/layout/Page";
 import HeroSection from "../components/HeroSection";
 import React from "react";

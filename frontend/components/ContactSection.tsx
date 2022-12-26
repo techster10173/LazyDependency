@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography, Box, Grid, Container, Button } from "@material-ui/core";
+import { Typography, Box, Grid, Container, Button } from "@mui/material";
 import Image from "next/image";
 
 export default function ContactSection(): JSX.Element {
@@ -12,13 +12,13 @@ export default function ContactSection(): JSX.Element {
             <Typography variant="body1" >
               Get in touch with the Lazy Dependency team!
             </Typography>
-            <Button variant="contained" href="avnerlipszyc36@gmail.com">
+            <Button variant="contained" href="mailto:avnerlipszyc36@gmail.com">
               Get in Touch
             </Button>
           </Grid>
           <Grid item xs={12} sm={6}>
             <Container>
-              <img src="/assets/contact.svg" width={400} height={400}  />
+              <Image src="/assets/contact.svg" width={400} height={400} alt={""}  />
             </Container>
           </Grid>
         </Grid>
