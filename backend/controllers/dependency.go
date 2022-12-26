@@ -93,7 +93,7 @@ func UploadConnections(c *gin.Context) {
 		newVrsn := newVersion(k, v.(string))
 		log.Printf(newVrsn)
 		log.Printf(k)
-		query += "MERGE (:Dependency {name: '" + k + "'})-[:HAS]->(" + id + ":Version {name: '" + v.(string) + "'}) "
+		query += "MERGE (:Dependency {name: '" + k + "'})-[:HAS]->(" + id + ":Version {name: '" + newVrsn + "'}) "
 		query += "MERGE (" + id + ")-[:IN_STACK]->(s) "
 	}
 
