@@ -97,6 +97,8 @@ func UploadConnections(c *gin.Context) {
 		query += "MERGE (" + id + ")-[:IN_STACK]->(s) "
 	}
 
+	//i made some code
+
 	session := neo4jclient.DB.NewSession(c, neo4j.SessionConfig{AccessMode: neo4j.AccessModeWrite})
 	defer session.Close(c)
 
