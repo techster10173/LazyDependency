@@ -17,9 +17,7 @@ export default function FeatureBlock({
     <Grid item xs={12} sm={6} md={4}  >
    
       {icon !== undefined ? (
-        <Avatar variant="rounded" >
-          {React.cloneElement(icon, { color: "primary" })}
-        </Avatar>
+        icon
       ) : null}
       <Typography variant="h3" >
         {title}

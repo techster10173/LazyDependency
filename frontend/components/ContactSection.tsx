@@ -4,9 +4,8 @@ import Image from "next/image";
 
 export default function ContactSection(): JSX.Element {
   return (
-    <Container maxWidth="md" >
-      <Box sx={{  borderRadius: 4, p: 2 }}>
-        <Grid container alignItems="center" spacing={4}>
+    <Container maxWidth="md" style={{ marginTop: '-20px' }} >
+        <Grid container alignItems="center">
           <Grid item xs={12} sm={6}>
             <Typography variant="h2">Contact Us</Typography>
             <Typography variant="body1" >
@@ -22,7 +21,8 @@ export default function ContactSection(): JSX.Element {
             </Container>
           </Grid>
         </Grid>
-      </Box>
+     
     </Container>
   );
 }
+

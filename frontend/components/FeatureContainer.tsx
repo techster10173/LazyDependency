@@ -11,3 +11,4 @@ export default function FeatureContainer({ children }: Props): JSX.Element {
       {children ?? ''}</Container>
   );
 }
+

@@ -1,5 +1,5 @@
 import { Button, Container, Box } from "@mui/material";
-import CodeIcon from "@mui/icons-material/Code";
+import CodeRoundedIcon from '@mui/icons-material/CodeRounded';
 import StarIcon from "@mui/icons-material/Star";
 import PeopleIcon from "@mui/icons-material/People";
 import Page from "../components/layout/Page";
@@ -34,16 +34,16 @@ export default function HomePage(): JSX.Element {
         <FeatureBlocksContainer>
           <FeatureBlock
             title="Innovative"
-            icon={<PeopleIcon />}
+            icon={<PeopleIcon color="secondary"/>}
             content={
               <>
-                Simplify the process of managing the external libraries and frameworks that your project depends on.
+                Simplify the process of managing the external libraries and frameworks in your projects.
               </>
             }
           />
           <FeatureBlock
-            title="Simple"
-            icon={<StarIcon />}
+            title="Simple" 
+            icon={<StarIcon color="secondary"/>}
             content={
               <>
                 Easily manage multiple environments, such as development, staging, and production.
@@ -52,19 +52,16 @@ export default function HomePage(): JSX.Element {
           />
           <FeatureBlock
             title="Scalable"
-            icon={<CodeIcon />}
+            icon={<CodeRoundedIcon color="secondary"/>}
             content={
               <>
                 Handle a large number of dependencies without becoming unwieldy or inefficient.
               </>
             }
           />
-          
+             
         </FeatureBlocksContainer>
-      </FeatureContainer>
-      
-      
-      
+      </FeatureContainer> 
       <Box >
         <ContactSection  />
       </Box>
