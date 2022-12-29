@@ -50,7 +50,7 @@ func InitServer(prod *bool) (r *gin.Engine) {
 		dependencies.GET("/:id", controllers.GetDependency)
 		dependencies.POST("/like", controllers.LikeDependency)
 		dependencies.POST("/unlike", controllers.UnlikeDependency)
-		dependencies.POST("/comment", controllers.CommentDependency)
+		dependencies.POST("/comment", controllers.AddComment)
 	}
 
 	return router
