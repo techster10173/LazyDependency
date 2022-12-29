@@ -4,8 +4,8 @@ compile_backend:
 run_frontend:
 	cd frontend && npm run dev
 
-run_backend:
-	cd backend && ./lazydependency
+run_backend_dev:
+	cd backend && go run server.go
 
 run:
 	make compile_backend
